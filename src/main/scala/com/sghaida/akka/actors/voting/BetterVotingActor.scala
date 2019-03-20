@@ -1,4 +1,4 @@
-package com.sghaida.akka.actors
+package com.sghaida.akka.actors.voting
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 

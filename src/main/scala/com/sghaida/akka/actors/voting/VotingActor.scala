@@ -1,7 +1,6 @@
-package com.sghaida.akka.actors
+package com.sghaida.akka.actors.voting
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
-import com.sghaida.akka.actors.CounterActor.system
 
 object VotingActor extends App {
 
