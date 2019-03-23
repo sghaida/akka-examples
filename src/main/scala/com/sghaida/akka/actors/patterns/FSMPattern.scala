@@ -67,12 +67,9 @@ object FSMPattern {
             waitingForMoney(inventory,prices, product, money + amount, receiveMonyTimeoutSchedule, requester )
           )
         }
-
-
-
     }
 
-    def receiveMonyTimeoutSchedule: Cancellable = context.system.scheduler.scheduleOnce(1 seconds){
+    def receiveMonyTimeoutSchedule: Cancellable = context.system.scheduler.scheduleOnce(1 second){
       self ! ReceiveMoneyTimeout
     }(context.dispatcher)
   }
